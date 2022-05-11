@@ -664,14 +664,16 @@ $bannerURL: "{{ (.Site.Data.homepage.banner.image | default "images/banner.jpg")
 			&.featured {
 				border-radius: 0;
 				display: block;
-				margin: $box-padding 0 $box-padding ($box-padding * -1);
+				margin: $box-padding 0 $box-padding 0;
 				position: relative;
-				width: calc(100% + #{$box-padding * 2});
+				width: calc(100%);
 
 				img {
 					border-radius: 0;
 					display: block;
-					width: 100%;
+                    width: 300px;
+                    margin-left: auto;
+                    margin-right: auto;
 				}
 
 				&:first-child {
