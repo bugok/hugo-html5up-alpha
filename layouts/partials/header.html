@@ -3,9 +3,9 @@
     <h1>{{ with .Site.Data.globalheader.title }}{{ . | markdownify }}{{else}}{{ .Site.Title }}{{end}}</h1>
     <nav id="nav">
         <ul>
-            <li><a href="{{ .Site.BaseURL }}">Home</a></li>
             <li>
-                <a href="#" class="icon solid fa-angle-down">Layouts</a>
+                <!-- Adding dir=ltr to make specify the arrow to the left of the text --> 
+                <a href="#" class="icon solid fa-angle-down" dir="ltr">תפריט</a>
                 <ul>
                     {{- range .Site.Menus.main -}}
                         {{- if .HasChildren -}}
