@@ -689,7 +689,7 @@ $bannerURL: "{{ (.Site.Data.homepage.banner.image | default "images/banner.jpg")
 
 				&:last-child {
 					border-radius: 0 0 _size(border-radius) _size(border-radius);
-					margin-bottom: $box-padding * -1;
+					margin-bottom: (0.1 * $box-padding);
 					margin-top: $box-padding;
 
 					img {
@@ -1689,8 +1689,7 @@ $bannerURL: "{{ (.Site.Data.homepage.banner.image | default "images/banner.jpg")
 
 				.image {
 					&.featured {
-						margin-left: ($box-padding-horizontal * -1);
-						width: calc(100% + #{$box-padding-horizontal * 2});
+                        width: calc(100%);
 
 						&:first-child {
 							margin-bottom: $box-padding-vertical;
@@ -1698,7 +1697,7 @@ $bannerURL: "{{ (.Site.Data.homepage.banner.image | default "images/banner.jpg")
 						}
 
 						&:last-child {
-							margin-bottom: $box-padding-vertical * -1;
+							margin-bottom: (0.5 * $box-padding-vertical);
 							margin-top: $box-padding-vertical;
 						}
 					}
@@ -1902,8 +1901,6 @@ $bannerURL: "{{ (.Site.Data.homepage.banner.image | default "images/banner.jpg")
 
 				.image {
 					&.featured {
-						margin-left: ($box-padding-horizontal * -1);
-						width: calc(100% + #{$box-padding-horizontal * 2});
 
 						&:first-child {
 							margin-bottom: $box-padding-vertical;
@@ -2061,8 +2058,6 @@ $bannerURL: "{{ (.Site.Data.homepage.banner.image | default "images/banner.jpg")
 				.image {
 					&.featured {
 						border-radius: 0;
-						margin-left: ($box-padding-horizontal * -1);
-						width: calc(100% + #{$box-padding-horizontal * 2});
 
 						img {
 							border-radius: 0 !important;
@@ -2074,7 +2069,7 @@ $bannerURL: "{{ (.Site.Data.homepage.banner.image | default "images/banner.jpg")
 						}
 
 						&:last-child {
-							margin-bottom: $box-padding-vertical * -1;
+							margin-bottom: (0.1 * $box-padding-vertical);
 							margin-top: $box-padding-vertical;
 						}
 					}
