@@ -162,7 +162,7 @@ $bannerURL: "{{ (.Site.Data.homepage.banner.image | default "images/banner.jpg")
 	}
 
 	p {
-		margin: 0 0 _size(element-margin) 0;
+		margin: 0 0 _size(element-margin)*0.4 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -822,6 +822,7 @@ $bannerURL: "{{ (.Site.Data.homepage.banner.image | default "images/banner.jpg")
 		list-style: disc;
 		margin: 0 0 _size(element-margin) 0;
 		padding-left: 1em;
+		padding-right: 2em;
 
 		li {
 			padding-left: 0.5em;
