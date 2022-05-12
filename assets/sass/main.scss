@@ -1909,7 +1909,7 @@ $bannerURL: "{{ (.Site.Data.homepage.banner.image | default "images/banner.jpg")
 						}
 
 						&:last-child {
-							margin-bottom: $box-padding-vertical * -1;
+							margin-bottom: $box-padding-vertical;
 							margin-top: $box-padding-vertical;
 						}
 					}
