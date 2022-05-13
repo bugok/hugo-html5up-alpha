@@ -2100,3 +2100,36 @@ $bannerURL: "{{ (.Site.Data.homepage.banner.image | default "images/banner.jpg")
 			}
 
 	}
+
+
+/* figure */
+/* This is taken from the zen theme: https://github.com/frjo/hugo-theme-zen */
+figure {
+  &.image {
+
+      display: table;
+
+      img {
+        display: block;
+      }
+
+      &.center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &.left {
+        margin: 0;
+        float: left;
+        clear: both;
+
+      }
+
+      &.right {
+        margin: 0;
+        float: right;
+        clear: both;
+      }
+    }
+}
+
