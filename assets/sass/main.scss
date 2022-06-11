@@ -1451,6 +1451,7 @@ $bannerURL: "{{ (.Site.Data.homepage.banner.image | default "images/banner.jpg")
 			h2 {
 				font-size: 2.75em;
 				margin: 0;
+				color: _palette(fg-light);
 			}
 
 			p {
@@ -1489,7 +1490,7 @@ $bannerURL: "{{ (.Site.Data.homepage.banner.image | default "images/banner.jpg")
 		}
 
 		.copyright {
-			color: _palette(fg-light);
+			color: _palette(fg-bold);
 			font-size: 0.9em;
 			line-height: 1em;
 			margin: 2em 0 0 0;
