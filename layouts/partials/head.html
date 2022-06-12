@@ -6,3 +6,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+{{- if not .Site.IsServer }}
+    {{- if hasPrefix .Site.GoogleAnalytics "G-" }}
+    {{ template "_internal/google_analytics.html" . }}
+    {{- end }}
+{{- end }}
